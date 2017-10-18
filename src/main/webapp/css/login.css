@@ -1,0 +1,96 @@
+body {
+    position: relative;
+    background: url("../images/bgg.jpg") ;
+      /* 背景图垂直、水平均居中 */
+        background-position: center center;
+        /* 背景图不平铺 */
+        background-repeat: no-repeat;
+        /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+        background-attachment: fixed;
+        /* 让背景图基于容器大小伸缩 */
+        background-size: cover;
+        /* 设置背景颜色，背景图加载过程中会显示背景色 */
+}
+
+.main {
+    width: 900px;
+    margin: 0 auto;
+    height: 750px;
+}
+
+.center {
+    position: absolute;
+    background-color: white;
+    margin: 0 auto;
+    width: 700px;
+    height: 350px;
+    margin-top: 750px;
+    margin-left: 100px;
+    border-radius: 15px;
+    opacity: 0.85;
+}
+
+.logo {
+    position: absolute;
+    background: url("../images/logo.png");
+    background-size: 100%;
+    width: 100px;
+    height: 58px;
+    margin-top: 780px;
+    margin-left: 300px;
+}
+
+.head h1 {
+    position: absolute;
+    margin-top: 785px;
+    margin-left: 440px;
+}
+
+.name input,
+.password input,
+.repeat input,
+.email input {
+    width: 350px;
+    height: 23px;
+}
+
+.name {
+    position: absolute;
+    margin-top: 890px;
+    margin-left: 220px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.password {
+    position: absolute;
+    margin-top: 950px;
+    margin-left: 220px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+hr {
+    width: 300px;
+    margin-top: -500px;
+}
+
+.btn1 {
+    position: absolute;
+    margin-top: 1000px;
+    margin-left: 340px;
+}
+
+.btn2 {
+    position: absolute;
+    margin-top: 1000px;
+    margin-left: 500px;
+}
+
+.foot {
+    position: absolute;
+    margin-top: 1380px;
+    margin-left:250px;
+    color: white;
+    font-size: 22px;
+}

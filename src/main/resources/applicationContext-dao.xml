@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="
+    	http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+	
+	<!-- 得到数据库连接 -->
+	 <bean id="ds" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/school"/>
+        <property name="username" value="root"/>
+        <property name="password" value="@newlife01"/>
+    </bean>
+    
+    <!-- hibernate -->
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+    	<!-- hibernate 数据库连接 -->
+    	<property name="dataSource"  ref="ds" />
+    	<!-- hibernate 属性 -->
+    	<property name="hibernateProperties">
+    		<value>
+                hibernate.dialect=org.hibernate.dialect.MySQLDialect
+                hibernate.show_sql=true
+                hibernate.format_sql=true
+                hibernate.hbm2ddl.auto=update
+            </value>
+    	</property>
+    	<!-- hibernate 扫描实体映射配置 -->
+    	<property name="packagesToScan">
+    		 <list>
+                <value>online.qsx.model</value>
+            </list>
+    	</property>
+    </bean>
+    
+    <!-- 事物配置:声明式事物 -->
+    <!-- 使用spring提供的事物增强 -->
+    <bean id="tm" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+    	<property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    
+    <!-- 事物的规则 -->
+    <tx:advice id="myAdvice" transaction-manager="tm">
+    	<tx:attributes>
+    		<tx:method name="add*" propagation="REQUIRED" rollback-for="Exception"/>
+    		<tx:method name="save*" propagation="REQUIRED" rollback-for="Exception"/>
+    		<tx:method name="insert*" propagation="REQUIRED" rollback-for="Exception"/>
+    		
+    		<tx:method name="delete*" propagation="REQUIRED" rollback-for="Exception"/>
+    		<tx:method name="remove*" propagation="REQUIRED" rollback-for="Exception"/>
+    		
+    		<tx:method name="update*" propagation="REQUIRED" rollback-for="Exception"/>
+    		<tx:method name="edit*" propagation="REQUIRED" rollback-for="Exception"/>
+    		
+    		<tx:method name="get*" read-only="false" propagation="NOT_SUPPORTED"/>
+    		<tx:method name="query*" read-only="false" propagation="NOT_SUPPORTED"/>
+    		<tx:method name="find*" read-only="false" propagation="NOT_SUPPORTED"/>
+    		
+    		<tx:method name="*" propagation="REQUIRED" rollback-for="Exception"/>
+    	</tx:attributes>
+    </tx:advice>
+    
+    <!-- 事物的切面 -->
+    <aop:config>
+    	<aop:pointcut expression="execution(public * online.qsx.server.*.*.*(..))" id="myPointcut"/>
+    	<aop:advisor advice-ref="myAdvice" pointcut-ref="myPointcut"/>
+    </aop:config>
+    
+    
+    <!-- 引入spring提供的hibernate操作模板 -->
+    <bean id="baseDao" class="online.qsx.common.BaseDao">
+    	<property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    
+    <!-- 识别Dao -->
+    <context:component-scan base-package="online.qsx.dao.impl"/>
+    
+</beans>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="default" namespace="/" extends="struts-default">
+		<action name="login" class="userAction" method="login">
+			<result name="succeed">/WEB-INF/jsp/home.jsp</result>
+			<result name="false">/WEB-INF/jsp/login.jsp</result>
+		</action>
+
+		<action name="save" class="userAction" method="none">
+			<result name="succeed">/WEB-INF/jsp/save.jsp</result>
+		</action>
+
+		<!-- 新增用户 -->
+		<action name="saveUser" class="userAction" method="save">
+			<result name="succeed">/WEB-INF/jsp/list.jsp</result>
+		</action>
+
+		<action name="register" class="userAction" method="none">
+			<result name="succeed">/WEB-INF/jsp/register.jsp</result>
+		</action>
+		<action name="UserRegister" class="userAction" method="save">
+			<result name="succeed">/WEB-INF/jsp/list.jsp</result>
+		</action>
+		<action name="rechargeAndWithdrow" class="userAction" method="none">
+			<result name="succeed">/WEB-INF/jsp/rechargeAndWithdrow.jsp</result>
+		</action>
+		<action name="recharge" class="userAction" method="none">
+			<result name="succeed">/WEB-INF/jsp/recharge.jsp</result>
+		</action>
+		<action name="rechargeMoney" class="userAction" method="recharge">
+			<result name="succeed">/WEB-INF/jsp/home.jsp</result>
+		</action>
+		<action name="withdrow" class="userAction" method="none">
+			<result name="succeed">/WEB-INF/jsp/withdrow.jsp</result>
+		</action>
+		<action name="withdrowMoney" class="userAction" method="withdrow">
+			<result name="succeed">/WEB-INF/jsp/home.jsp</result>
+		</action>
+	</package>
+</struts>
