@@ -5,7 +5,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ä¸»é¡µ</title>
+    <title>主页</title>
     <style type="text/css">
     body {
         margin: 0;
@@ -195,27 +195,27 @@
 <body>
     <div class="xd-hand">
         <div class="hand-1"><img src="img/a1.png"></div>
-        <div class="hand-2"><a href="WEB-INF/jsp/login.jsp"> ç»å½ |</a> <a href="WEB-INF/jsp/register.jsp" style="color: red;"> å¿«éæ³¨å </a><a href="#">| ç½è´·ç¥è¯æ®å</a></div>
+        <div class="hand-2"><a href="login.jsp"> 登录 |</a> <a href="register.jsp" style="color: red;"> 快速注册 </a><a href="#">| 网贷知识普及</a></div>
     </div>
     <div class="xd-two">
         <div class="two-1"><img src="img/b2.png"></div>
         <div class="two-2">
-            <a href="#" style="color:#0096e0; ">é¦é¡µ &nbsp;&nbsp;&nbsp;</a>
-            <a href="#">æè¦åºå &nbsp;&nbsp;&nbsp;</a>
-            <a href="#">æè¦åæ¬¾ &nbsp;&nbsp;&nbsp;</a>
-            <a href="#">å®å¨ä¿é &nbsp;&nbsp;&nbsp;</a>
-            <a href="#">åºåäººæè² &nbsp;&nbsp;&nbsp;</a>
-            <a href="#">ä¿¡æ¯æ«é² &nbsp;&nbsp;&nbsp;</a>
+            <a href="#" style="color:#0096e0; ">首页 &nbsp;&nbsp;&nbsp;</a>
+            <a href="#">我要出借 &nbsp;&nbsp;&nbsp;</a>
+            <a href="#">我要借款 &nbsp;&nbsp;&nbsp;</a>
+            <a href="#">安全保障 &nbsp;&nbsp;&nbsp;</a>
+            <a href="#">出借人教育 &nbsp;&nbsp;&nbsp;</a>
+            <a href="#">信息披露 &nbsp;&nbsp;&nbsp;</a>
         </div>
         <div class="two-3"><a href="#"><img src="img/4.png"></a></div>
     </div>
     <div class="xd-three">
         <div class="three-1">
-            <p style="font-size: 30px; "><b>å®å¨&nbsp;  ä¸ä¸</b></p>
-            <p style="font-size: 30px; ">å®ä¿¡åç &nbsp; åè´¨ä¿è¯</p>
-            <div class="three-2"><a href="WEB-INF/jsp/register.jsp">å¿«éæ³¨å</a></div>
-            <p> å·²æè´¦å·ï¼<a href="WEB-INF/jsp/login.jsp">ç«å³ç»å½</a></p>
-            <div class="three-3">ç½è´·æé£é©ï¼åºåéè°¨æï¼</div>
+            <p style="font-size: 30px; "><b>安全&nbsp;  专业</b></p>
+            <p style="font-size: 30px; ">宜信品牌 &nbsp; 品质保证</p>
+            <div class="three-2"><a href="register.jsp">快速注册</a></div>
+            <p> 已有账号？<a href="login.jsp">立即登录</a></p>
+            <div class="three-3">网贷有风险，出借需谨慎！</div>
         </div>
     </div>
     <div class="xd-four"><img src="img/3.png"></div>
@@ -236,8 +236,8 @@
     </div>
     <div class="xd-seven"><img src="img/7.png"></div>
     <div class="botton">
-        <div class="botton-1">å®äººè´·åæ¬¾å¹³å°å·²ç´¯è®¡æ¿è´·è¶è¿:<b>&nbsp;300äº¿</b></div>
-        <div class="botton-2"><a href="#">æµæµä½ è½åå¤å°</a></div>
+        <div class="botton-1">宜人贷借款平台已累计房贷超过:<b>&nbsp;300亿</b></div>
+        <div class="botton-2"><a href="#">测测你能借多少</a></div>
     </div>
 </body>
 
