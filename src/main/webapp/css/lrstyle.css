@@ -85,7 +85,9 @@
 
     .infor div:hover {
         background: #0098e0;
-    }
+         color: white;
+}
+  
 
 
     .right-infor {

@@ -1,79 +1,60 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+    pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<!DOCTYPE html>
 <html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>充值</title>
-<meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="css/lrstyle.css">
+    <title>充值</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/lrstyle.css">
 </head>
 
 <body>
-	<div>
-		<div class="tag">
-			<img id="img-1" src="images/1.png" alt=""><a href="">宜信官网</a> <img
-				id="img-2" src="images/2.png" alt=""><span class="tag-1">xxx-xxx-xx</span><span
-				class="tag-2">欢迎您，${user.getUsername()} <a href="">&nbsp; &nbsp;退出</a></span>
-		</div>
-		<div class="header">
-			<img src="images/logo.png"> 宜人贷理财账户管理系统
-		</div>
-		<div class="home">
-			<a href="">返回我的账户首页</a></span>
-		</div>
-		<div class="main">
-			<div class="left-menu">
-				<div class="infor">
-					<div class="menu">
-						<a href="user-info.html">基本信息</a>
-					</div>
-					<div class="menu">
-						<a href="rechargeAndWithdrow">充值提现</a>
-					</div>
-					<div class="menu">
-						<a href="payment.html">支付单</a>
-					</div>
-					<div class="menu">
-						<a href="fund-flow.html">资金流水</a>
-					</div>
-					<div class="menu">
-						<a href="risk-investment-analyse.html">投资风险等级测评</a>
-					</div>
-					<div class="menu">
-						<a href="changPassword">修改密码</a>
-					</div>
-				</div>
-			</div>
-			<form
-				action="rechargeMoney?user.id=${user.getId()}&user.username=${user.getUsername()}&user.password=${user.getPassword()}"
-				method="post" onsubmit="return myFunction()">
-				<div class="right-infor">
-					<div class="inp">
-						请输入充值金额： <input id="in" class="inputsize" name="user.balance"
-							type="text"> 元
-						<div style="margin-top: 20px">
-							<button type="submit">确认</button>
-						</div>
-					</div>
-				</div>
-			</form>
-		</div>
-	</div>
-	<script
-		src="http://lib.sinaapp.com/js/jquery/2.0.3/jquery-2.0.3.min.js"></script>
-	<script type="text/javascript">
-		function myFunction() {
-			var infor = $('#in').val();
-			if (infor > 0 && infor < 2000) {
-				alert("充值成功");
-				return true;
-			} else {
-				alert("充值失败")
-				return false;
-			}
-		}
-	</script>
+    <div>
+        <div class="tag"><img id="img-1" src="images/1.png" alt=""><a href="">宜信官网</a>
+            <img id="img-2" src="images/2.png" alt=""><span class="tag-1">xxx-xxx-xx</span><span class="tag-2">欢迎您，xxx <a href="">&nbsp; &nbsp;退出</a></span></div>
+        <div class="header">
+            <img src="images/logo.png"> 宜人贷理财账户管理系统
+        </div>
+        <div class="home"><a href="index.html">返回我的账户首页</a></span>
+        </div>
+        <div class="main">
+            <div class="left-menu">
+                <div class="infor">
+                   <div class="menu"><a href="user-info.jsp">基本信息</a></div>
+                <div class="menu"><a href="rechargeAndWithdrow.jsp">充值提现</a></div>
+                <div class="menu"><a href="payment.jsp">支付单</a></div>
+                <div class="menu"><a href="fund-flow.jsp">资金流水</a></div>
+                <div class="menu"><a href="risk-investment-analyse.jsp">投资风险等级测评</a></div>
+                <div class="menu"><a href="changePassword.jsp">修改密码</a></div>
+                </div>
+            </div>
+            <form action="#" method="post" onsubmit="return myFunction()">
+                <div class="right-infor">
+                    <div class="inp">请输入充值金额：
+                        <input id="in" class="inputsize" type="text"> 元
+                        <div style="margin-top: 20px">
+                            <button type="submit">确认</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="http://lib.sinaapp.com/js/jquery/2.0.3/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript">
+    function myFunction() {
+        var infor = $('#in').val();
+        if (infor > 0 && infor < 2000) {
+            alert("充值成功");
+            return true;
+        } else {
+            alert("充值失败")
+            return false;
+        }
+    }
+    </script>
 </body>
 
 </html>
