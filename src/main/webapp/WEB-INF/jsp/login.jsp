@@ -5,13 +5,13 @@
 <html lang="en">
 
 <head>
-<<<<<<< HEAD
+
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
  <title>登录</title>
-=======
+
     <meta charset="UTF-8">
     <title>登陆</title>
->>>>>>> 60d1be739dd29a16392e0efee6c5262b83b59272
+
     <link rel="stylesheet" type="text/css" href="css/login.css">
 </head>
 
