@@ -1,0 +1,128 @@
+ head,
+ body {
+     width: 100%;
+     height: 100%;
+     margin: 0;
+     padding: 0;
+     overflow-x: hidden;
+ }
+
+ div a {
+
+     text-decoration: none;
+ }
+
+ .tag {
+     width: 100%;
+     height: 30px;
+     background-color: #f7f7f7;
+     line-height: 30px;
+ }
+
+ .header img {
+     vertical-align: middle;
+ }
+
+ #img-1 {
+     vertical-align: middle;
+     margin-left: 200px;
+ }
+
+ #img-2 {
+     vertical-align: middle;
+     margin-left: 20px;
+ }
+
+ .menu {
+
+     margin: 30px;
+ }
+
+ .header {
+     width: 100%;
+     height: 10%;
+     margin-left: 200px;
+     font-size: 30px;
+ }
+
+ .home {
+     width: 100%;
+     height: 40px;
+     background: #0098e0;
+     margin-top: 10px;
+ }
+
+ .left-menu {
+     width: 15%;
+     height: 800px;
+     margin-left: 250px;
+     background: #eee;
+     color: #666;
+     margin-top: 30px;
+     position: absolute;
+     border-radius: 15px;
+ }
+
+ .tag-1 {
+     color: #0298E5;
+     font-weight: bold;
+     font-size: 20px;
+ }
+
+ .tag-2 {
+     float: right;
+     margin-right: 200px;
+ }
+
+ .home a {
+     margin-left: 200px;
+     line-height: 40px;
+     color: white;
+ }
+
+ .infor a {
+     color: #767676;
+ }
+
+ .infor div:hover {
+     background: #0098e0;
+     color: white;
+ }
+
+ .info {
+     margin-left: 800px;
+     margin-top: 100px;
+     width: 500px;
+     height: 500px;
+ }
+
+ .info1 {
+     font-size: 25px;
+
+     margin-top: 20px;
+ }
+
+ .infotitle {
+     font-size: 30px;
+     color: #09C7F7;
+     margin-left: 900px;
+ }
+
+ .click {
+     margin-left: 350px;
+     margin-top: 100px;
+ }
+
+ .foot {
+     margin-left: 850px;
+     margin-top: 250px;
+ }
+
+ .ewm {
+     margin-left: 1350px;
+     margin-top: -460px;
+ }
+
+ .button {
+     margin-top: -20px;
+ }

@@ -1,3 +1,4 @@
+html,
 body {
     margin: 0;
     padding: 0;
@@ -52,7 +53,7 @@ div a {
 .left-menu {
     width: 15%;
     height: 800px;
-    margin-left: 250px;
+    margin-left: 200px;
     background: #eee;
     color: #666;
     margin-top: 30px;
@@ -82,29 +83,49 @@ div a {
     color: #767676;
 }
 
+
 .infor div:hover {
     background: #0098e0;
-    color: white;
+     color: white;
 }
 
-.right {
-    width: 800px;
-    height: 600px;
-    background: url(../images/bg.jpg); 
-     opacity: 0.6; 
-    margin-top: 30px;
-    margin-left: 33%;
+
+.page>div {
+    float: left;
+}
+
+.left-menu {
+    position: relative;
+    width: 15%;
+    height: 1100px;
+    margin-left: 250px;
+    background: #eee;
+    color: #666;
     border-radius: 20px;
 }
 
-.user {
-    width: 800px;
-    height: 20px;
-    padding-top: 50px;
-    padding-left: 200px;
+.right {
+    width: 1000px;
+    margin-top: 50px;
 }
 
-.user_button {
-    width: 100px;
+.title {
+    font-size: 30px;
+    text-align: center;
+}
+
+.welcome {
     margin-left: 50px;
+}
+
+.logo-title {
+    margin-left: 330px;
+}
+
+.check-part {
+    margin-left: 150px;
+}
+
+.submit {
+    text-align: center;
 }

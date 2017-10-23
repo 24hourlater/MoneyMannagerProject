@@ -1,0 +1,134 @@
+body {
+    position: relative;
+    background: url(../images/bg2.png) no-repeat;
+    background-size: 100%;
+    
+}
+
+.main{
+     width: 900px;
+    margin: 0 auto;
+    height: 750px;
+}
+.center {
+    background-color: white;
+    margin: 0 auto;
+    width: 900px;
+    height: 750px;
+    opacity: 0.85;
+    margin-top: 80px;
+    border-radius: 15px;
+}
+
+.logo {
+    position: absolute;
+    background: url("../images/logo.png");
+    background-size: 100%;
+    width: 100px;
+    height: 58px;
+    margin-top: -733.5px;
+    margin-left: 300px;
+}
+
+.head h1 {
+    position: absolute;
+    margin-top: -728px;
+    margin-left: 440px;
+}
+
+.name input,
+.password input,
+.repeat input,
+.email input,
+.phone input,
+.address input {
+    width: 350px;
+    height: 23px;
+}
+
+.name {
+    position: absolute;
+    margin-top: -600px;
+    margin-left: 220px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.password {
+    position: absolute;
+    margin-top: -540px;
+    margin-left: 220px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.repeat {
+    position: absolute;
+    margin-top: -480px;
+    margin-left: 220px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.email {
+    position: absolute;
+    margin-top: -420px;
+    margin-left: 220px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.phone {
+    position: absolute;
+    margin-top: -360px;
+    margin-left: 220px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.address {
+    position: absolute;
+    margin-top: -300px;
+    margin-left: 220px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.sex {
+
+    position: absolute;
+    margin-top: -240px;
+    margin-left: 220px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.profession {
+    position: absolute;
+    margin-top: -300px;
+    margin-left: 220px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+hr {
+    width: 700px;
+    margin-top: -140px;
+}
+
+.btn1 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 330px;
+}
+
+.btn2 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 490px;
+}
+
+.foot{
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 320px;
+}
