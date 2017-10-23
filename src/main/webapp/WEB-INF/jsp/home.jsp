@@ -5,7 +5,7 @@
 <html>
 
 <head>
-    <title>系统网页框架</title>
+    <title>系统框架</title>
     <meta charset="utf-8">
     <style type="text/css">
     html,
